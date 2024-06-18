@@ -1,0 +1,29 @@
+[data-theme="dark"] {
+    body{
+        background: linear-gradient(to bottom, var(--dark-top-bg) 0px, var(--dark-top-bg) 15%, var(--dark-top-bg) 200px, var(--dark-bg) 50px, var(--dark-bg) 100%);
+    }
+    .card{
+        background-color: var(--dark-card);
+    }
+    .card:hover{
+        background-color: var(--dark-card-hover);
+    }
+    h1{
+        color:var(--dark-text2);
+    }
+        .numberOf{
+            color:var(--dark-text2);
+        }
+    .overview-today{
+        color:var(--dark-text2);
+    }
+    .toggle-text{
+        color:var(--dark-text2);
+    }
+    .logo-one p{
+        color:var(--dark-text1);
+    }
+    .overview-today .card p{
+        color:var(--dark-text1);
+    }
+}

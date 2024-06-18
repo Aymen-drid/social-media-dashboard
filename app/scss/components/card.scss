@@ -66,6 +66,7 @@ background-color: var(--light-card-hover);
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
+    margin-top: 30px;
 }
 .overview-card-container{
     .card {
@@ -84,13 +85,13 @@ background-color: var(--light-card-hover);
     .card p{
         color:var(--light-text1);
     }
-    .card h3 {
+    .card .updates-overview{
+        color: var(--limegreen);
+    }
+    }
+    h3 {
         margin: 0;
     padding: 0;
     color: hsl(230, 17%, 14%);
     font-size: 250%;
-    }
-    .card .updates-overview{
-        color: var(--limegreen);
-    }
     }
