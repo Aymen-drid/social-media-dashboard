@@ -1,0 +1,18 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+*,*::after,*::before{
+    box-sizing: inherit;
+}
+body{
+    font-weight: bolder;
+ background: linear-gradient(to bottom, var(--light-top-bg) 0px, var(--light-top-bg) 15%, var(--light-top-bg) 200px, var(--light-bg) 50px, var(--light-bg) 100%);
+    
+    margin:0 10%  ;
+    padding: 0;
+    font-family: var(--font-inter);
+}
+.top-bar{
+    margin-bottom: 35px;
+}

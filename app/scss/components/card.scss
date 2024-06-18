@@ -1,0 +1,96 @@
+@use '../util/utils' as *;
+.social-card-container{
+display: flex;
+gap: 30px;
+flex-wrap: wrap;
+}
+.card{
+    align-items: center;
+    flex: 1 1 calc(25% - 30px);
+    text-align: center;
+    display: grid;
+    background-color: var(--light-card);
+    border-top:4px solid black ;
+    border-radius: 4%;    
+}
+#facebook-card{
+    border-color:var(--facebook);
+}
+#twitter-card{
+    border-color:var(--twitter);
+}   
+#instagram-card{
+    border-color: var(--instagram-start);
+}
+#instagram-card:hover{
+    border-color: var(--instagram-end);
+}
+#youtube-card{
+    border-color: var(--youtube);
+}
+.card:hover{
+background-color: var(--light-card-hover);
+}
+.logo-one  {
+    img,p{
+        display: inline-block;
+
+    }
+    p{
+        color: var(--light-text2);
+    }
+
+    white-space: nowrap;
+  }
+
+.numberOf{
+    margin: 0;
+    padding: 0;
+    color: hsl(230, 17%, 14%);
+    font-size: 450%;
+}
+.followers{
+            color: var(--light-text1);
+            letter-spacing:2px;
+        }
+.updates-total{
+    color: var(--limegreen);
+}
+.social-card-container{
+    margin-bottom: 40px;
+}
+#overview-today{
+    color: var(--light-text1);
+}
+.overview-card-container{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.overview-card-container{
+    .card {
+        border: none;   
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Two columns */
+        grid-template-rows: repeat(2, 1fr); /* Two rows */
+        width:rem(60) ;
+        height: rem(200);
+    }
+    .card img{
+        margin-left: 65px;
+        height: auto;
+        width: 35px;
+    }
+    .card p{
+        color:var(--light-text1);
+    }
+    .card h3 {
+        margin: 0;
+    padding: 0;
+    color: hsl(230, 17%, 14%);
+    font-size: 250%;
+    }
+    .card .updates-overview{
+        color: var(--limegreen);
+    }
+    }

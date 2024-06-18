@@ -9,8 +9,8 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:400,700">
 
-    <link rel="stylesheet" href="style.css">
-
+    <link defer rel="stylesheet" href="dist/style.css">
+    <script defer src="dist/script.js"></script>
     <title>Frontend Mentor | [Challenge Name Here]</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -29,120 +29,111 @@
 <body>
 
     <div class="dashboard">
-        <div class="total-followers">
-            <h1>Social Media Dashboard</h1>
-            <p class="total-fol" style="color: hsl(228, 12%, 44%);">Total Followers: 23,004</p>
-        </div>
-
-        <!-- Rounded switch -->
-
-        <div class="toggle">
-            <span>Dark mode</span>
-            <label class="switch">
-                <input type="checkbox">
-                <span class="slider round"></span>
-            </label>
-        </div>
+            <div class="top-bar">
+                <h1>Social Media Dashboard</h1>
+                <p id="total-fol">Total Followers: 23,004</p>
+                        <div class="toggle">
+                <span id="toggle-text">Dark mode</span>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+                        </div>
+            </div>
         <div class="social-card-container">
-            <div id="facebook-card" class="social-card">
+            <div id="facebook-card" class="card">
                 <div class="logo-one">
                     <img class="svg-img" src="images/icon-facebook.svg" alt="Example SVG Image">
                     <p>@nathanf</p>
                 </div>
                 <h2 class="numberOf">1987</h2>
-                <p>FOLLOWERS</p>
-                <p>▲ 12 Today</p>
+                <p class="followers">FOLLOWERS</p>
+                <p class="updates-total">▲ 12 Today</p>
             </div>
-            <div id="twitter-card" class="social-card">
+            <div id="twitter-card" class="card">
                 <div class="logo-one">
                     <img class="svg-img" src="images/icon-twitter.svg" alt="Example SVG Image">
                     <p>@nathanf</p>
-
                 </div>
                 <h2 class="numberOf">1044</h2>
-                <p>FOLLOWERS</p>
-                <p>▲ 99 Today</p>
+                <p class="followers">FOLLOWERS</p>
+                <p class="updates-total">▲ 99 Today</p>
             </div>
-            <div id="instagram-card" class="social-card">
+            <div id="instagram-card" class="card">
                 <div class="logo-one">
                     <img class="svg-img" src="images/icon-instagram.svg" alt="Example SVG Image">
                     <p>@realnathanf</p>
                 </div>
                 <h2 class="numberOf">11k</h2>
-                <p>FOLLOWERS</p>
-                <p>▲ 1099 Today</p>
+                <p class="followers">FOLLOWERS</p>
+                <p class="updates-total">▲ 1099 Today</p>
             </div>
-            <div id="youtube-card" class="social-card">
+            <div id="youtube-card" class="card">
 
                 <div class="logo-one">
                     <img class="svg-img" src="images/icon-youtube.svg" alt="Example SVG Image">
                     <p>Nathan F.</p>
                 </div>
                 <h2 class="numberOf">8239</h2>
-                <p>SUBSCRIBERS</p>
-                <p>▼ 144 Today</p>
+                <p class="followers">SUBSCRIBERS</p>
+                <p class="updates-total" >▼ 144 Today</p>
             </div>
         </div>
-        <div class="overview">
-            <h1 style="
-                color: hsl(228, 12%, 44%);
-                margin-bottom: 20px;">Overview-Today</h1>
-        </div>
-        <div class="overview-today">
-            <div class="overview-item">
+            <h1 id="overview-today">Overview-Today</h1>
+        <div class="overview-card-container">
+            <div class="card">
                 <p>Page Views</p>
                 <img class="svg-img" src="images/icon-facebook.svg" alt="Example SVG Image">
                 <h3>87</h3>
-                <p>▲ 3%</p>
+                <p class="updates-overview">▲ 3%</p>
             </div>
-            <div class="overview-item">
+            <div class="card">
                 <p>Likes</p>
                 <img class="svg-img" src="images/icon-facebook.svg" alt="Example SVG Image">
                 <h3>52</h3>
-                <p>▼ 2%</p>
+                <p class="updates-overview">▼ 2%</p>
             </div>
-            <div class="overview-item">
+            <div class="card">
                 <p>Retweets</p>
                 <img class="svg-img" src="images/icon-twitter.svg" alt="Example SVG Image">
                 <h3>117</h3>
-                <p>▲ 303%</p>
+                <p class="updates-overview">▲ 303%</p>
             </div>
-            <div class="overview-item">
+            <div class="card">
                 <p>Likes</p>
                 <img class="svg-img" src="images/icon-twitter.svg" alt="Example SVG Image">
                 <h3>507</h3>
-                <p>▲ 553%</p>
+                <p class="updates-overview">▲ 553%</p>
             </div>
-            <div class="overview-item">
+            <div class="card">
                 <p>Likes</p>
                 <img class="svg-img" src="images/icon-instagram.svg" alt="Example SVG Image">
                 <h3>5462</h3>
-                <p>▲ 2257%</p>
+                <p class="updates-overview">▲ 2257%</p>
             </div>
-            <div class="overview-item">
+            <div class="card">
                 <p>Profile Views</p>
                 <img class="svg-img" src="images/icon-instagram.svg" alt="Example SVG Image">
                 <h3>52k</h3>
-                <p>▲ 1375%</p>
+                <p class="updates-overview">▲ 1375%</p>
             </div>
-            <div class="overview-item">
+            <div class="card">
                 <p>Likes</p>
                 <img class="svg-img" src="images/icon-youtube.svg" alt="Example SVG Image">
                 <h3>107</h3>
-                <p>▼ 19%</p>
+                <p class="updates-overview">▼ 19%</p>
             </div>
-            <div class="overview-item">
+            <div class="card">
                 <p>Total Views</p>
                 <img class="svg-img" src="images/icon-youtube.svg" alt="Example SVG Image">
                 <h3>1407</h3>
-                <p>▼ 12%</p>
+                <p class="updates-overview">▼ 12%</p>
             </div>
         </div>
     </div>
     <div class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-        Coded by <a href="#">Your Name Here</a>.
+        Coded by <a href="#">Aymen Drid</a>.
     </div>
 </body>
-
 </html>
