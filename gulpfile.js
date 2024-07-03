@@ -20,15 +20,27 @@ function scssTask() {
 }
 
 // JavaScript Task
+const concat = require('gulp-concat');
+const rollup = require('gulp-rollup');
+
 function jsTask() {
-  return src('app/js/script.js', { sourcemaps: true })
+  return src('app/js/**/*.js', { sourcemaps: true })
+    .pipe(rollup({
+      input: 'app/js/script.js', // Specify the entry point of your JavaScript bundle
+      format: 'iife', // Output format: immediately-invoked function expression (IIFE)
+    }))
     .pipe(babel({ presets: ['@babel/preset-env'] }))
-    .pipe(terser())
-    .pipe(dest('dist', { sourcemaps: '.' }))
+    .pipe(concat('bundle.js')) // Concatenate all JS files into one file named bundle.js
+    .pipe(terser()) // Minify the concatenated file
+    .pipe(dest('dist', { sourcemaps: '.' })) // Output to dist directory with sourcemaps
     .on('end', function() {
       console.log('jsTask completed');
     });
 }
+
+exports.jsTask = jsTask;
+
+
 
 // Browsersync
 function browserSyncServe(cb) {

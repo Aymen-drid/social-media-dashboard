@@ -1,0 +1,1 @@
+{"version":3,"sources":["theme-switcher.js"],"names":["console","log"],"mappings":"AAAA,aAAAA,QAAQC,IAAI,mBACZD,QAAQC,IAAI,gBACZD,QAAQC,IAAI","file":"theme-switcher.js","sourcesContent":["console.log('aymen u r right');\nconsole.log(\"aymen do it \");\nconsole.log('hedd');"]}
